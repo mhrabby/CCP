@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<html lang="en">
+<head>
+    <style>
+body {
+    margin: 0;
+    padding:0;
+    font-family: source Sans Pro;
+    font-weight: lighter;
+    padding: 1em;
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: lighter;
+
+}
+
+.block p {
+   padding: 3em;
+   position: relative;
+   top: 50%;
+   transform: translateY(-50%);
+}
+
+section {
+    display: block;
+    max-width: 1100px;
+    background: #008080;
+    margin: 0 auto 1em;
+    height: 300px;
+    position: relative;
+    border-right: .2em;
+    transform: preserve-3d;
+
+}
+
+
+</style>
+    <meta charset="UTF-8">
+    <title>ielts</title>
+</head>
+<body>
+    <div class="wrapper">
+        <h2>[IELTS]</h2>
+                <br>
+        <section class="block">
+
+<p>The International English Language Testing System is international standardized English language proficiency test designed for non-native English speakers.It is jointly managed by the British Council,IDP: IELTS Australia and Cambridge Assessment English.The IELTS is universally accepted by most Australian, British, Canadian,European, Irish and New Zealand academic institutions, by over 3,000 academic institutions in the United States,and by various professional organizations across the world.The IELTS is also essential for visa applications and immigration purposes in most english speaking countries such as: US,Canada,England,Australia and New Zealand.Countries like Germany and the Netherlands are also implementing the IELTS into their immigration and university admissions applications.</p>
+
+        </section>
+</div>
+</body>
+</html>
+
+{% endblock %}

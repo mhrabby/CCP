@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<html lang="en">
+<head>
+    <style>
+body {
+    margin: 0;
+    padding:0;
+    font-family: source Sans Pro;
+    font-weight: lighter;
+    padding: 1em;
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: lighter;
+
+}
+
+.block p {
+   padding: 3em;
+   position: relative;
+   top: 50%;
+   transform: translateY(-50%);
+}
+
+section {
+    display: block;
+    max-width: 1100px;
+    background: #008080;
+    margin: 0 auto 1em;
+    height: 300px;
+    position: relative;
+    border-right: .2em;
+    transform: preserve-3d;
+
+}
+
+
+</style>
+    <meta charset="UTF-8">
+    <title>ielts</title>
+</head>
+<body>
+    <div class="wrapper">
+        <h2>[SPOKEN ENGLISH]</h2>
+                <br>
+        <section class="block">
+            <p>English is the most widely spoken language in the world and the most used medium of international
+communication, especially with foreigners. Expertise in Spoken English does not only help one in their
+job prospects, but also tremendously improves their social life and boosts their confidence.
+Our Spoken English Course is designed to help you speak more clearly and openly than you ever have
+before. We emphasize on natural pronunciation, fluency and accuracy.</p>
+        </section>
+</div>
+</body>
+</html>
+
+{% endblock %}

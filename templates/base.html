@@ -1,0 +1,138 @@
+{% load static %}
+       <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+
+
+<!DOCTYPE html>
+      <html lang="en" dir="ltr">
+
+
+        <head>
+          <meta charset="utf-8">
+          <title></title>
+          <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+          <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+
+
+              <style>
+        .dropbtn {
+          background-color: white;
+          color: white;
+
+          padding: 10px;
+          font-size: 14px;
+          border: none;
+        }
+
+        .dropdown {
+          position: relative;
+          display: inline-block;
+        }
+
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: #1abc9c;
+          min-width: 100%;
+
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          z-index: 1;
+
+
+
+
+
+        }
+
+        .dropdown-content a {
+          color: black;
+          padding: 2px 10px;
+          text-align: center;
+          display: block;
+          font-size: 12px;
+
+
+        }
+
+        .dropdown-content a:hover {background-color:#e74c3c;}
+
+        .dropdown:hover .dropdown-content {display: block;}
+
+        .dropdown:hover .dropbtn {background-color:#d0d3d4;}
+
+
+            </style>
+
+
+
+        </head>
+        <body>
+
+        <div class="header">
+             <a href="home"> <img src="{% static 'images/ccp4.png' %}" alt="CCP" style="float:left"; width="11%" height="5%" align="center">
+                <input type="checkbox" id="chk">
+                    <label for="chk" class="show-menu-btn">
+                        <i class="fas fa-ellipsis-h"></i>
+                    </label>
+                    <ul class="menu">
+                        <label for="chk" class="hide-menu-btn">
+                            <i class="fas fa-times"></i>
+                        </label>
+
+                        <div class="dropdown">
+
+                            <button class="dropbtn"><a href="#">Career Counseling</a></button>
+                            <div class="dropdown-content">
+
+                              </div>
+                            </div>
+
+                        <div class="dropdown">
+                            <button class="dropbtn"><a href="#">Academic Courses</a></button>
+                            <div class="dropdown-content">
+                                <a href="ielts">IELTS</a>
+                                <a href="SpokenEnglish">Spoken English</a>
+                                <a href="#">University Admission</a>
+                                <a href="excel">Excel</a>
+                                <a href="sat">SAT</a>
+                                <a href="gre">GRE</a>
+                                <a href="gmat">GMAT</a>
+                              </div>
+                        </div>
+
+
+                         <div class="dropdown">
+                            <button class="dropbtn"><a href="#">Professional Development</a></button>
+                            <div class="dropdown-content">
+                                <a href="#">Corporate Excel</a>
+                                <a href="#">Corporate Powerpoint</a>
+                                <a href="#">Graphic Design</a>
+                                <a href="#">Video Editing</a>
+                                <a href="#">Start Up Business Planning</a>
+                              </div>
+                         </div>
+
+
+                          <div class="dropdown">
+                            <button class="dropbtn"><a href="#">About Us</a></button>
+                          </div>
+
+
+
+                    </ul>
+
+             </a>
+
+        </div>
+
+        <div class="wrapper">
+
+            {% block content %}
+            {% endblock %}
+        </div>
+
+
+
+        </body>
+      </html>

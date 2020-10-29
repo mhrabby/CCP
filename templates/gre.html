@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<html lang="en">
+<head>
+    <style>
+body {
+    margin: 0;
+    padding:0;
+    font-family: source Sans Pro;
+    font-weight: lighter;
+    padding: 1em;
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: lighter;
+
+}
+
+.block p {
+   padding: 3em;
+   position: relative;
+   top: 50%;
+   transform: translateY(-50%);
+}
+
+section {
+    display: block;
+    max-width: 1100px;
+    background: #008080;
+    margin: 0 auto 1em;
+    height: 300px;
+    position: relative;
+    border-right: .2em;
+    transform: preserve-3d;
+
+}
+
+
+</style>
+    <meta charset="UTF-8">
+    <title>ielts</title>
+</head>
+<body>
+    <div class="wrapper">
+        <h2>[GRE]</h2>
+                <br>
+        <section class="block">
+
+            <p>The GRE or Graduate Record Examinations is the SAT for graduate level university
+admissions. The GRE is a standardized aptitude test designed to test students’
+capabilities and is widely accepted all over the world. However, unlike the SAT,
+the GRE has universal recognition and is applicable for Canadian and Australian
+universities along with other countries.
+
+The GRE is accepted for business school programs, MBA programs and doctoral
+programs in business.</p>
+        </section>
+</div>
+</body>
+</html>
+
+{% endblock %}
